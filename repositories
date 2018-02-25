@@ -1,0 +1,5 @@
+# This is a repositories file for the Orchestra make.sh script.
+# All empty lines or lines starting with # are ignored;
+# all other lines are repositories with a Makefile cloned in.
+# The Makefile must be able to build and install its things
+# into $PREFIX with a single command.
