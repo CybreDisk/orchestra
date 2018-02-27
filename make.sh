@@ -10,7 +10,8 @@ if [ "x$PREFIX" == "x" ] ; then
 	PREFIX="`pwd`/prefix"
 fi
 
-mkdir $PREFIX 2> /dev/null || true
+rm -r $PREFIX 2> /dev/null || true
+mkdir $PREFIX
 
 echo "# CybreDisk Orchestra make.sh"
 echo "version $VERSION"
