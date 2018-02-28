@@ -5,12 +5,14 @@
 ## Install
 
 ```sh
-$ git clone --recurse-submodules https://github.com/CybreDisk/orchestra.git
+$ git clone https://github.com/CybreDisk/orchestra.git
 ```
 
 ## Usage
 
-From the orchestra folder run:
+Add repositories to the `repositories` file.
+
+Then, from the orchestra folder run:
 
 ```sh
 $ ./make.sh

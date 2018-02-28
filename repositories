@@ -3,3 +3,5 @@
 # all other lines are repositories with a Makefile cloned in.
 # The Makefile must be able to build and install its things
 # into $PREFIX with a single command.
+
+# Add your repositories below.
