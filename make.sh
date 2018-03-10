@@ -11,13 +11,14 @@ if [ "x$PREFIX" == "x" ] ; then
 	mkdir "$PREFIX" 2> /dev/null || true
 fi
 
-# HACK $PREFIX should be automatically created
+rm -r "$PREFIX" 2> /dev/null || true
+mkdir "$PREFIX" 2> /dev/null || true
+
 if [ ! -d "$PREFIX" ] ; then
 	echo '$PREFIX must be an existing directory'
 	exit 1
 fi
 
-# HACK $PREFIX should be automatically emptied
 if [ ! -z "`ls "$PREFIX"`" ] ; then
 	echo '$PREFIX must be empty'
 	exit 2
